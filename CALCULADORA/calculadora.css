@@ -1,8 +1,41 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #3ee6e6; /* fondo rosado suave */
 }
 
-button {
-  min-height: 50px;
-  font-size: 1.2rem;
+.card {
+  background-color: #f8bbd0; /* color rosado para la tarjeta/calculadora */
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Botones numéricos */
+.btn-secondary {
+  background-color: #e47ef4;
+  color: white;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #ec407a;
+}
+
+/* Botones de operación */
+.btn-warning {
+  background-color: #5f67ff;
+  border: none;
+  color: rgb(10, 10, 10);
+}
+.btn-warning:hover {
+  background-color: #a47de8;
+}
+
+/* Botón igual */
+.btn-success {
+  background-color: #d8e91e;
+  border: none;
+  color: rgb(7, 7, 7);
+}
+.btn-success:hover {
+  background-color: #fbff3c;
+}
+
