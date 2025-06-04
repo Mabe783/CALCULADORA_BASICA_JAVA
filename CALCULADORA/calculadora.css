@@ -1,6 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #3ee6e6; /* fondo rosado suave */
+  background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-fondo-pantalla-textura-papel-arrugado-espacio-libre_33771-635.jpg?w=2000'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+ 
 }
 
 .card {
@@ -9,7 +14,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Botones numéricos */
+/* Botones numericos */
 .btn-secondary {
   background-color: #e47ef4;
   color: white;
@@ -19,7 +24,7 @@ body {
   background-color: #ec407a;
 }
 
-/* Botones de operación */
+/* Botones de operacion */
 .btn-warning {
   background-color: #5f67ff;
   border: none;
@@ -29,7 +34,7 @@ body {
   background-color: #a47de8;
 }
 
-/* Botón igual */
+/* Boton igual */
 .btn-success {
   background-color: #d8e91e;
   border: none;
