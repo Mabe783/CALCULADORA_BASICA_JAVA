@@ -1,1 +1,8 @@
+body {
+  font-family: Arial, sans-serif;
+}
 
+button {
+  min-height: 50px;
+  font-size: 1.2rem;
+}
