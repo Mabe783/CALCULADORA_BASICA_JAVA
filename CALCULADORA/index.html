@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- contenido el idioma es en español  -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora con java y bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="calculadora.css">
-</head>
+    <meta charset="UTF-8">  <!-- permite el uso de caracteres especiales y tildes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- este código  nos permite que el diseño sea responsive design(adapte a cualquier dispositivo móvil)-->
+    <title>Calculadora con java y bootstrap</title> <!-- este título nos aparecerá en la pagina que estamos desarrollando -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  <!-- este elemento contiene un atributo de nombre href con su valor de atributo que es la dirección de bootstrap-->
+    <link rel="stylesheet" href="calculadora.css">  <!-- agregamos la dirección para vincular con la hoja de estilos(css), para personalizar-->
+</head> <!-- bloque head, desde la línea 3-9, etiqueta de apertura(línea 3), etiqueta de cierre (línea 9) -->
 
-<body class="bg-light">
-  <div class="container py-5">
+<body class="bg-light"> <!-- desarrollo del body, con etiqueta de apertura body en la línea 11 y etiqueta de cierre (línea 54); también se puede apreciar el atributo clase con su valor (bg-light) que hace referencia a un fondo claro con bootstrap-->
+  <div class="container py-5"> <!-- el contenido será con márgenes automáticos y centrado (py-5) padding vertical-->
   
-    <h2 class="text-center mb-4">Calculadora Básica</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card p-4">
-         <input type="text" id="input" class="form-control mb-3 text-end" placeholder="Ingrese un número" readonly>
-         <div id="operation" class="text-center mb-2 text-primary fw-bold"></div>
-         <div class="row row-cols-4 g-2" id="buttons-numbers"></div>
+    <h2 class="text-center mb-4">Calculadora Básica</h2> <!--Título de la calculadora con margen inferior de (mb-4) -->
+    <div class="row justify-content-center"> <!--Bootstrap crea un sistema de cuadrícula. Fila(row), se encuentra centrado el contenido-->
+      <div class="col-md-6">  <!--6 columnas en pantalla mediana/grande -->
+        <div class="card p-4">  <!--padding interno -->
+         <input type="text" id="input" class="form-control mb-3 text-end" placeholder="Ingrese un número" readonly> <!--pantalla de entrada de la calculadora realizado con bootstrap-->
+         <div id="operation" class="text-center mb-2 text-primary fw-bold"></div>  <!--Display de operaciones-->
+         <div class="row row-cols-4 g-2" id="buttons-numbers"></div> <!-- conectores con botones, con espacio de (g-2)-->
          
-         <div class="row g-2">
+         <div class="row g-2"> <!--línea 22 a línea 35 con cierre de etiqueta div, se tiene los botones desde (0-9)-->
          <div class="col-4"><button class="btn btn-secondary w-100" onclick="appendNumber(1)">1</button></div>
          <div class="col-4"><button class="btn btn-secondary w-100" onclick="appendNumber(2)">2</button></div>
          <div class="col-4"><button class="btn btn-secondary w-100" onclick="appendNumber(3)">3</button></div>
@@ -36,20 +36,24 @@
 
          <!-- Botones de operaciones -->
          <div class="row g-2 mt-2">
-         <div class="col"><button class="btn btn-warning w-100" onclick="chooseOperation('+')">+</button></div>
-         <div class="col"><button class="btn btn-warning w-100" onclick="chooseOperation('-')">-</button></div>
-         <div class="col"><button class="btn btn-warning w-100" onclick="chooseOperation('*')">×</button></div>
-         <div class="col"><button class="btn btn-warning w-100" onclick="chooseOperation('/')">÷</button></div>
+         <div class="col"><button class="btn btn-warning w-100" onclick="chooseOperation('+')">+</button></div> <!--botón suma-->
+         <div class="col"><button class="btn btn-warning w-100" onclick="chooseOperation('-')">-</button></div><!--botón resta-->
+         <div class="col"><button class="btn btn-warning w-100" onclick="chooseOperation('*')">*</button></div>  <!--botón multiplicación-->
+         <div class="col"><button class="btn btn-warning w-100" onclick="chooseOperation('/')">÷</button></div> <!--botón división-->
          </div> 
          <!-- Boton para limpiar pantalla -->
          <div class="row g-2 mt-2">
-            <div class="col"><button class="btn btn-success w-100" onclick="calculate()">=</button></div>
-         <div class="col"><button class="btn btn-secondary w-100" onclick="clearAll()">C</button></div>
+            <div class="col"><button class="btn btn-success w-100" onclick="calculate()">=</button></div> <!--botón resultado(=)-->
+         <div class="col"><button class="btn btn-secondary w-100" onclick="clearAll()">C</button></div> <!--botón limpiar (C)-->
         </div>
     </div>
     
     
-    <script src="calculadora.js"></script>
+    <script src="calculadora.js"></script> <!-- vinculación con JavaScript -->
 
-</body>
+</body> <!--cierre de etiqueta body, lo que se muestra en la página -->
 </html>
+
+
+
+

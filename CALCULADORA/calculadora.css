@@ -1,46 +1,46 @@
-body {
-  font-family: Arial, sans-serif;
-  background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-fondo-pantalla-textura-papel-arrugado-espacio-libre_33771-635.jpg?w=2000'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+body { /* diseño de estilo en body*/
+  font-family: Arial, sans-serif;  /* tipo de letra o fuente */
+  background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-fondo-pantalla-textura-papel-arrugado-espacio-libre_33771-635.jpg?w=2000'); /*fondo usando un enlace de la imagen */
+  background-size: cover; /* fondo cubra todo el body*/
+  background-position: center; /* permite centrar el fondo*/
+  background-repeat: no-repeat; /* no permite que el fondo se repita*/
+  min-height: 100vh; /* para que el body esté a la altura de la pantalla del navegador  */
  
 }
 
-.card {
+.card { /* estilo de la tarjeta de la calculadora*/
   background-color: #f8bbd0; /* color rosado para la tarjeta/calculadora */
-  border: none;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: none; /* elimina bordes predeterminados*/
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /*efecto de sombra suave para dar un efecto de profundidad */
 }
 
 /* Botones numericos */
 .btn-secondary {
-  background-color: #e47ef4;
-  color: white;
-  border: none;
+  background-color: #b52cca; /*color para botones de selección (0-9) */
+  color: white; /* color del número en los botones*/
+  border: none; /* elimina posibles bordes*/
 }
 .btn-secondary:hover {
-  background-color: #ec407a;
+  background-color: #ec407a; /* cambio de color cuando el cursor pase por el botón*/
 }
 
 /* Botones de operacion */
 .btn-warning {
-  background-color: #5f67ff;
-  border: none;
-  color: rgb(10, 10, 10);
+  background-color: #5f67ff; /* color de fondo*/
+  border: none; /* elimina posibles borde*/
+  color: rgb(10, 10, 10); /* color del número dentro del botón*/
 }
 .btn-warning:hover {
-  background-color: #a47de8;
+  background-color: #a47de8; /* efecto hover, cuando pasa el cursor cambia de color*/
 }
 
 /* Boton igual */
 .btn-success {
-  background-color: #d8e91e;
-  border: none;
-  color: rgb(7, 7, 7);
+  background-color: #e3f70fcc; /*color de fondo botón (=) */
+  border: none; /* elimina posibles bordes*/
+  color: rgb(7, 7, 7); /* color del signo (=) botón */
 }
 .btn-success:hover {
-  background-color: #fbff3c;
+  background-color: #fbff3c; /* uso de egecto de cambio de color cuando pase el cursor */
 }
 
