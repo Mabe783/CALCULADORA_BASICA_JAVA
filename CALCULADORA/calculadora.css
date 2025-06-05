@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://img.freepik.com/fotos-premium/fondo-blanco-fondo-pantalla-textura-papel-arrugado-espacio-libre_33771-635.jpg?w=2000'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+ 
+}
+
+.card {
+  background-color: #f8bbd0; /* color rosado para la tarjeta/calculadora */
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones numericos */
+.btn-secondary {
+  background-color: #e47ef4;
+  color: white;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #ec407a;
+}
+
+/* Botones de operacion */
+.btn-warning {
+  background-color: #5f67ff;
+  border: none;
+  color: rgb(10, 10, 10);
+}
+.btn-warning:hover {
+  background-color: #a47de8;
+}
+
+/* Boton igual */
+.btn-success {
+  background-color: #d8e91e;
+  border: none;
+  color: rgb(7, 7, 7);
+}
+.btn-success:hover {
+  background-color: #fbff3c;
+}
+
